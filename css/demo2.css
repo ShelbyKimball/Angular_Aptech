@@ -3,4 +3,7 @@ h1{
 }
 p{
     color: violet;
+    font-size: 26px;
+    font-family: "Times New Roman";
+    font-weight: normal;
 }
