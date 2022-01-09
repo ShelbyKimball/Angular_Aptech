@@ -1,0 +1,49 @@
+.container.row{
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container{
+  width: 600px;
+}
+input.ng-invalid{
+  border: 1px solid red;
+}
+.snz{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
+.state{
+  width: 45%;
+}
+.state select{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.zip{
+  width: 50%;
+  margin-left: 5px;
+}
+.zip input{
+  width: 43%;
+}
+.checkbox{
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+.checkbox_content{
+  position: absolute;
+  bottom: 45px;
+  left: 27px;
+}
+.btn{
+  position: absolute;
+  bottom: 10px;
+  right: 75px;
+  border-radius: 15px;
+}
