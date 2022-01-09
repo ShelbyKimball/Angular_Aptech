@@ -1,0 +1,91 @@
+<div class="container">
+  <h4>2. Enter delivery address</h4>
+  <h6>Required field</h6>
+</div>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <div class="container row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="firstname">First name</label><br/>
+        <input type="text"
+               name="firstName"
+               id="firstname"
+               ngModel
+               required
+        />
+      </div>
+      <div class="form-group">
+        <label for="firstname">Last name</label><br/>
+        <input type="text"
+               name="lastName"
+               id="lastname"
+               ngModel
+               required
+        />
+      </div>
+      <div class="form-group">
+        <label for="firstname">Phone number (in case of delivery questions)</label><br/>
+        <input type="tel"
+               name="phone"
+               id="phone"
+               ngModel
+               required
+        />
+
+        <div>
+          <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" required ngModel> <span class="checkbox_content">Set as my prefferd address</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="address">Street address</label><br/>
+        <input type="text"
+               name="address"
+               id="address"
+               ngModel
+               required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="apt">Apt,suite,etc (optional)</label><br/>
+        <input type="text"
+               name="apt"
+               id="apt"
+               ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label><br/>
+        <input type="text"
+               name="city"
+               id="city"
+               ngModel
+               required
+        />
+
+      </div>
+
+      <div class="snz row">
+        <div class="state">
+          <label>State</label>
+          <select class="form-control" name="gender" ngModel required>
+            <option value="HaNoi">Ha Noi</option>
+            <option value="HCM">Ho Chi Minh</option>
+            <option value="DN">Da Nang</option>
+          </select>
+        </div>
+        <div class="zip">
+          <label>Zip code</label><br/>
+          <input type="number" name="zip" id="zip" required ngModel/>
+        </div>
+      </div>
+
+      <div>
+        <button [disabled]="!f.valid" type="submit" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
+</form>

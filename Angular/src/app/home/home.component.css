@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container img {
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,10%);
+  margin-bottom: 15px;
+}
+.container h3{
+  font-size: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-5%,-50%);
+  margin-top: 10px;
+  color: white;
+}
+p{
+  font-size: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-8%,-50%);
+  margin-top: 10px;
+}
+.btn{
+  position: absolute;
+  padding: 15px;
+  bottom: 10px;
+  right: 10px;
+}
+.btn button{
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 7px;
+  color: red;
+}
+

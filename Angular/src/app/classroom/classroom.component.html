@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="studentName"/>
+<button (click)="onCreateStudent()" type="button" [disabled]="!alowAddStudent">Add student</button>
+<p *ngIf="studentName.length > 0">Giá trị đang được nhập: {{studentName}}</p>
+<p *ngIf="created">{{notification}}</p>
+<student *ngFor="let sv of sinhviens" [name]="sv"></student>

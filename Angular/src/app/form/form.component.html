@@ -1,0 +1,42 @@
+<label>Name: </label><br/>
+<input type="text" name="fullname" placeholder="Full name" [(ngModel)]="fullName" required/><br/>
+
+<label>Email: </label><br/>
+<input type="email" name="email" placeholder="Email" [(ngModel)]="email" required/><br/>
+
+<label>Phone: </label><br/>
+<input type="tel" name="telephone" placeholder="Phone number" [(ngModel)]="tel" required/><br/>
+
+<label>Address: </label><br/>
+<input type="text" name="address" placeholder="Address" [(ngModel)]="address" required/><br/>
+
+<select name="gender" [(ngModel)]="gender">
+  <option>Choose gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+<br/>
+<button type="button" (click)="onSubmit()">Submit</button>
+<p *ngIf="afterAdded">{{noti}}</p>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Phone</td>
+    <td>Address</td>
+    <td>Gender</td>
+  </tr>
+  <tr>
+    <td><p *ngFor="let st of students">{{st}}</p></td>
+    <td><p *ngFor="let email of stEmail">{{email}}</p></td>
+    <td><p *ngFor="let phone of stTel">{{phone}}</p></td>
+    <td><p *ngFor="let address of stAddress">{{address}}</p></td>
+    <td><p *ngFor="let gender of stGender">{{gender}}</p></td>
+    <td></td>
+  </tr>
+</table>
+
+
+
